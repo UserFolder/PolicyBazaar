@@ -38,10 +38,11 @@ public class LandingPageTestClass extends BaseClass{
 	}
 	
 	@Test(priority=3)
-	public void verifyHealthInsuranceIconIsClickable() throws EncryptedDocumentException, IOException {
+	public void verifyHealthInsuranceIconIsClickable() throws EncryptedDocumentException, IOException, InterruptedException {
 		logger=report.createTest("Verify Health Insurance Icon Is Clickable");
 		String actualResult=lp.clickHealthInsuranceIcon(); 
 		String expectedResult = FetchData.fromExcelSheet(1, 1);
+		Thread.sleep(3000);
 		sa.assertEquals(actualResult, expectedResult);
 		System.out.println(actualResult+" :: "+ expectedResult);
 	}

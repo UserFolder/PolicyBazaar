@@ -37,9 +37,10 @@ public class LandingPage {
 		return result;
 	}
 	
-	public String clickHealthInsuranceIcon() {
+	public String clickHealthInsuranceIcon() throws InterruptedException {
 		Waits.explicitWait(healthInsuranceIcon, driver, 0);
 		healthInsuranceIcon.click();
+		Thread.sleep(3000);
 		String result=driver.getCurrentUrl();
 		return result;
 	}
