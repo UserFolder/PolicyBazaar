@@ -16,7 +16,7 @@ public class FetchData {
 		
 		String data="";
 		
-		String path = "C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"PolicyBazaar.xlsx";
+		String path = "C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"ExcelSheet"+File.separator+"PolicyBazaar.xlsx";
 		FileInputStream file = new FileInputStream(path);
 		
 		Sheet s=WorkbookFactory.create(file).getSheet("sheet1");

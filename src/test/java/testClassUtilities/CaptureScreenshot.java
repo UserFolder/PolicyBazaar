@@ -9,9 +9,9 @@ import org.openqa.selenium.io.FileHandler;
 
 public class CaptureScreenshot {
 	
-	public static String takeSS(WebDriver driver,String fileName) throws IOException {
+	public static String takeSS(WebDriver driver) throws IOException {
 		
-		String path ="C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"Screenshots"+System.currentTimeMillis()+fileName+".png";
+		String path ="C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"test-output"+File.separator+"Screenshots"+System.currentTimeMillis()+".png";
 		
 		TakesScreenshot t = (TakesScreenshot)driver;
 		

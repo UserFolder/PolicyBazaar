@@ -4,9 +4,9 @@
   <test  name="Test1">
 	  <parameter name="browserName" value="chrome"></parameter>
 	  <classes>
-		  
-		  
-		  
+		  <class name="testClasses.BaseClass"></class>
+		  <class name="testClasses.LandingPageTestClass"></class>
 	  </classes>  
   </test> <!-- Test1 -->
 </suite> <!-- RegressionSuite -->
+  
