@@ -43,7 +43,6 @@ public class LandingPageTestClass extends BaseClass{
 		String actualResult=lp.clickHealthInsuranceIcon(); 
 		String expectedResult = FetchData.fromExcelSheet(1, 1);
 		sa.assertEquals(actualResult, expectedResult);
-		driver.navigate().back();
 		System.out.println(actualResult+" :: "+ expectedResult);
 	}
 	
