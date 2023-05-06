@@ -30,7 +30,7 @@ public class BaseClass {
 		WebDriver driver=OpenDriver.openBrowser(browserName,"https://www.policybazaar.com");
 	    this.driver=driver;
 	    
-	    extent = new ExtentHtmlReporter("C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"test-output"+File.separator+"ReportsAventStack"+File.separator+"ReportAventStack"+".html");
+	    extent = new ExtentHtmlReporter("C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"test-output"+File.separator+"ReportsAventStack"+File.separator+System.currentTimeMillis()+".html");
         report = new ExtentReports();
         report.attachReporter(extent);
         
