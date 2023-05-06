@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-06T09:32:07 IST" name="RegressionSuite" finished-at="2023-05-06T09:32:19 IST" duration-ms="12481">
+    <groups>
+    </groups>
+    <test started-at="2023-05-06T09:32:07 IST" name="Test1" finished-at="2023-05-06T09:32:19 IST" duration-ms="12481">
+      <class name="testClasses.BaseClass">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.BaseClass@5e0826e7]" started-at="2023-05-06T09:32:07 IST" name="openBrowser" finished-at="2023-05-06T09:32:11 IST" duration-ms="3845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.BaseClass@5e0826e7]" started-at="2023-05-06T09:32:19 IST" name="closeBrowser" finished-at="2023-05-06T09:32:19 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.BaseClass -->
+      <class name="testClasses.LandingPageTestClass">
+        <test-method is-config="true" signature="initializingLandingPageObject()[pri:0, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:11 IST" name="initializingLandingPageObject" finished-at="2023-05-06T09:32:11 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializingLandingPageObject -->
+        <test-method signature="verifyHealthInsuranceIconIsDisplayed()[pri:1, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:11 IST" name="verifyHealthInsuranceIconIsDisplayed" finished-at="2023-05-06T09:32:11 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHealthInsuranceIconIsDisplayed -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:11 IST" name="capturesFailedScreenshots" finished-at="2023-05-06T09:32:11 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHealthInsuranceIconIsDisplayed status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconIsDisplayed()[pri:1, instance:testClasses.LandingPageTestClass@4fb61f4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyHealthInsuranceIconText()[pri:2, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:11 IST" name="verifyHealthInsuranceIconText" finished-at="2023-05-06T09:32:12 IST" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHealthInsuranceIconText -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:12 IST" name="capturesFailedScreenshots" finished-at="2023-05-06T09:32:12 IST" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHealthInsuranceIconText status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconText()[pri:2, instance:testClasses.LandingPageTestClass@4fb61f4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyHealthInsuranceIconIsClickable()[pri:3, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:12 IST" name="verifyHealthInsuranceIconIsClickable" finished-at="2023-05-06T09:32:19 IST" duration-ms="7134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHealthInsuranceIconIsClickable -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@4fb61f4a]" started-at="2023-05-06T09:32:19 IST" name="capturesFailedScreenshots" finished-at="2023-05-06T09:32:19 IST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHealthInsuranceIconIsClickable status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconIsClickable()[pri:3, instance:testClasses.LandingPageTestClass@4fb61f4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+      </class> <!-- testClasses.LandingPageTestClass -->
+    </test> <!-- Test1 -->
+  </suite> <!-- RegressionSuite -->
+</testng-results>
