@@ -17,14 +17,16 @@ public class LandingPageTestClass extends BaseClass{
 	public void initializingLandingPageObject() {
 		lp = new LandingPage(driver);	
 		sa = new SoftAssert();
+		System.out.println("initializing LandingPage Object......");
 	}
 	
 	@Test(priority=1)
 	public void verifyHealthInsuranceIconIsDisplayed() {
 		logger=report.createTest("Verify If Health Insurance Icon Is Displayed");
-		boolean actualResult=lp.checkHealthInsuranceIconIsDisplayed();
+		boolean actualResult=lp.checkHealthInsuranceIconIsDisplayed(); 
 		sa.assertTrue(actualResult);
-		System.out.println(actualResult);
+		System.out.println("Health Insurance Icon Displayed = " + actualResult);
+		sa.assertAll();
 	}
 	
 	@Test(priority=2)
@@ -34,19 +36,31 @@ public class LandingPageTestClass extends BaseClass{
 		String expectedResult=FetchData.fromExcelSheet(1, 0);
 		sa.assertEquals(actualResult, expectedResult);
 		System.out.println(actualResult+" :: "+ expectedResult);
-		
+		sa.assertAll();
 	}
 	
 	@Test(priority=3)
 	public void verifyHealthInsuranceIconIsClickable() throws EncryptedDocumentException, IOException, InterruptedException {
 		logger=report.createTest("Verify Health Insurance Icon Is Clickable");
 		String actualResult=lp.clickHealthInsuranceIcon(); 
-		String expectedResult = FetchData.fromExcelSheet(1, 1);
+		String expectedResult = FetchData.fromExcelSheet(2, 1);
 		Thread.sleep(3000);
 		sa.assertEquals(actualResult, expectedResult);
 		System.out.println(actualResult+" :: "+ expectedResult);
+		sa.assertAll();
 	}
 	
+	@Test(priority=4)
+	public void moveToQuotePage1URL() throws EncryptedDocumentException, IOException {
+		driver.navigate().back();
+		logger=report.createTest("Move To QuotePage1 URL");
+		driver.navigate().to(FetchData.fromExcelSheet(2, 1));
+		String actualResult = driver.getCurrentUrl();
+		String expectedResult =FetchData.fromExcelSheet(2, 1);
+		sa.assertEquals(actualResult, expectedResult);
+		System.out.println();
+		sa.assertAll();
+	}
 
 	
 	

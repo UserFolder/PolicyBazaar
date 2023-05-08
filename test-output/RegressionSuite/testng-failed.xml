@@ -4,16 +4,18 @@
   <test thread-count="5" name="Test1(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="testClasses.LandingPageTestClass">
+      <class name="testClasses.QuotesPage1TestClass">
         <methods>
+          <include name="verifyClickabilityOfFemaleCheckbox"/>
           <include name="openBrowser"/>
-          <include name="initializingLandingPageObject"/>
-          <include name="verifyHealthInsuranceIconIsClickable"/>
+          <include name="verifyClickabilityOfMaleCheckbox"/>
           <include name="capturesFailedScreenshots"/>
-          <include name="verifyHealthInsuranceIconText"/>
+          <include name="initializingQuotesPage1Object"/>
+          <include name="verifyClickabilityOfTermsOfUse"/>
           <include name="closeBrowser"/>
+          <include name="verifyClickabilityOfPrivacyPolicy"/>
         </methods>
-      </class> <!-- testClasses.LandingPageTestClass -->
+      </class> <!-- testClasses.QuotesPage1TestClass -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

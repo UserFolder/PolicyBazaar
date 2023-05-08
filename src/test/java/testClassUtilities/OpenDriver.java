@@ -28,7 +28,7 @@ public class OpenDriver {
 		}
 		
 		driver.manage().window().maximize();
-		driver.get(url);
+		driver.navigate().to(url);
 		return driver;
   
 	}

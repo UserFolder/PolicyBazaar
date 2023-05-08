@@ -1,13 +1,397 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="4" total="22" passed="14" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-06T09:07:29 IST" name="RegressionSuite" finished-at="2023-05-06T09:07:42 IST" duration-ms="13272">
+  <suite started-at="2023-05-08T09:53:52 IST" name="RegressionSuite" finished-at="2023-05-08T09:54:32 IST" duration-ms="39580">
     <groups>
     </groups>
-    <test started-at="2023-05-06T09:07:29 IST" name="Test1" finished-at="2023-05-06T09:07:42 IST" duration-ms="13272">
+    <test started-at="2023-05-08T09:53:52 IST" name="Test1" finished-at="2023-05-08T09:54:32 IST" duration-ms="39580">
+      <class name="testClasses.QuotesPage1TestClass">
+        <test-method is-config="true" signature="initializingQuotesPage1Object()[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:05 IST" name="initializingQuotesPage1Object" finished-at="2023-05-08T09:54:05 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializingQuotesPage1Object -->
+        <test-method signature="verifyMaleCheckboxText()[pri:1, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:05 IST" name="verifyMaleCheckboxText" finished-at="2023-05-08T09:54:06 IST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMaleCheckboxText -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:06 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMaleCheckboxText status=SUCCESS method=QuotesPage1TestClass.verifyMaleCheckboxText()[pri:1, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyFemaleCheckboxText()[pri:2, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="verifyFemaleCheckboxText" finished-at="2023-05-08T09:54:06 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFemaleCheckboxText -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:06 IST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFemaleCheckboxText status=SUCCESS method=QuotesPage1TestClass.verifyFemaleCheckboxText()[pri:2, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyClickabilityOfFemaleCheckbox()[pri:3, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="verifyClickabilityOfFemaleCheckbox" finished-at="2023-05-08T09:54:06 IST" duration-ms="76" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testClasses.QuotesPage1TestClass.verifyClickabilityOfFemaleCheckbox(QuotesPage1TestClass.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickabilityOfFemaleCheckbox -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:06 IST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickabilityOfFemaleCheckbox status=FAILURE method=QuotesPage1TestClass.verifyClickabilityOfFemaleCheckbox()[pri:3, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyClickabilityOfMaleCheckbox()[pri:4, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="verifyClickabilityOfMaleCheckbox" finished-at="2023-05-08T09:54:06 IST" duration-ms="114" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testClasses.QuotesPage1TestClass.verifyClickabilityOfMaleCheckbox(QuotesPage1TestClass.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickabilityOfMaleCheckbox -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:06 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickabilityOfMaleCheckbox status=FAILURE method=QuotesPage1TestClass.verifyClickabilityOfMaleCheckbox()[pri:4, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyTextOfYourFullNameLabel()[pri:5, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="verifyTextOfYourFullNameLabel" finished-at="2023-05-08T09:54:06 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTextOfYourFullNameLabel -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:06 IST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTextOfYourFullNameLabel status=SUCCESS method=QuotesPage1TestClass.verifyTextOfYourFullNameLabel()[pri:5, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyYourFullNameLabelByPassingBlankText()[pri:6, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:06 IST" name="verifyYourFullNameLabelByPassingBlankText" finished-at="2023-05-08T09:54:07 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYourFullNameLabelByPassingBlankText -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:07 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:07 IST" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyYourFullNameLabelByPassingBlankText status=SUCCESS method=QuotesPage1TestClass.verifyYourFullNameLabelByPassingBlankText()[pri:6, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyYourFullNameLabelByPassingText()[pri:7, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:07 IST" name="verifyYourFullNameLabelByPassingText" finished-at="2023-05-08T09:54:09 IST" duration-ms="2325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYourFullNameLabelByPassingText -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:09 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:09 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyYourFullNameLabelByPassingText status=SUCCESS method=QuotesPage1TestClass.verifyYourFullNameLabelByPassingText()[pri:7, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyTextOfContinueButton()[pri:8, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:09 IST" name="verifyTextOfContinueButton" finished-at="2023-05-08T09:54:09 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTextOfContinueButton -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:09 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:09 IST" duration-ms="33" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTextOfContinueButton status=SUCCESS method=QuotesPage1TestClass.verifyTextOfContinueButton()[pri:8, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyClickabilityOfContinueButton()[pri:9, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:09 IST" name="verifyClickabilityOfContinueButton" finished-at="2023-05-08T09:54:12 IST" duration-ms="2978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickabilityOfContinueButton -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:12 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:12 IST" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickabilityOfContinueButton status=SUCCESS method=QuotesPage1TestClass.verifyClickabilityOfContinueButton()[pri:9, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="veirifyPrivacyPolicyIsDisplayed()[pri:10, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:12 IST" name="veirifyPrivacyPolicyIsDisplayed" finished-at="2023-05-08T09:54:14 IST" duration-ms="2037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veirifyPrivacyPolicyIsDisplayed -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:14 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:14 IST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=veirifyPrivacyPolicyIsDisplayed status=SUCCESS method=QuotesPage1TestClass.veirifyPrivacyPolicyIsDisplayed()[pri:10, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyClickabilityOfPrivacyPolicy()[pri:11, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:14 IST" name="verifyClickabilityOfPrivacyPolicy" finished-at="2023-05-08T09:54:18 IST" duration-ms="4161" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.policybazaar.com/legal-and-admin-policies/] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.policybazaar.com/legal-and-admin-policies/] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testClasses.QuotesPage1TestClass.verifyClickabilityOfPrivacyPolicy(QuotesPage1TestClass.java:137)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickabilityOfPrivacyPolicy -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:18 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:19 IST" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickabilityOfPrivacyPolicy status=FAILURE method=QuotesPage1TestClass.verifyClickabilityOfPrivacyPolicy()[pri:11, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyTermsOfUseIsDisplayed()[pri:12, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:19 IST" name="verifyTermsOfUseIsDisplayed" finished-at="2023-05-08T09:54:21 IST" duration-ms="2066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsOfUseIsDisplayed -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:21 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:21 IST" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTermsOfUseIsDisplayed status=SUCCESS method=QuotesPage1TestClass.verifyTermsOfUseIsDisplayed()[pri:12, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="verifyClickabilityOfTermsOfUse()[pri:13, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:21 IST" name="verifyClickabilityOfTermsOfUse" finished-at="2023-05-08T09:54:21 IST" duration-ms="211" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+expected [https://www.policybazaar.com/legal-and-admin-policies/#termsofuse] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+expected [https://www.policybazaar.com/legal-and-admin-policies/#termsofuse] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testClasses.QuotesPage1TestClass.verifyClickabilityOfTermsOfUse(QuotesPage1TestClass.java:158)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickabilityOfTermsOfUse -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:21 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:21 IST" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickabilityOfTermsOfUse status=FAILURE method=QuotesPage1TestClass.verifyClickabilityOfTermsOfUse()[pri:13, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="navigateBackToQuotePage1URL()[pri:14, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:21 IST" name="navigateBackToQuotePage1URL" finished-at="2023-05-08T09:54:32 IST" duration-ms="10591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBackToQuotePage1URL -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.QuotesPage1TestClass@557caf28]" started-at="2023-05-08T09:54:32 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:32 IST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateBackToQuotePage1URL status=SUCCESS method=QuotesPage1TestClass.navigateBackToQuotePage1URL()[pri:14, instance:testClasses.QuotesPage1TestClass@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+      </class> <!-- testClasses.QuotesPage1TestClass -->
       <class name="testClasses.BaseClass">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.BaseClass@3270d194]" started-at="2023-05-06T09:07:29 IST" name="openBrowser" finished-at="2023-05-06T09:07:33 IST" duration-ms="4662" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.BaseClass@41d477ed]" started-at="2023-05-08T09:53:52 IST" name="openBrowser" finished-at="2023-05-08T09:53:56 IST" duration-ms="3680" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,55 +402,70 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.BaseClass@3270d194]" started-at="2023-05-06T09:07:42 IST" name="closeBrowser" finished-at="2023-05-06T09:07:42 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.BaseClass@41d477ed]" started-at="2023-05-08T09:54:32 IST" name="closeBrowser" finished-at="2023-05-08T09:54:32 IST" duration-ms="311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testClasses.BaseClass -->
       <class name="testClasses.LandingPageTestClass">
-        <test-method is-config="true" signature="initializingLandingPageObject()[pri:0, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:33 IST" name="initializingLandingPageObject" finished-at="2023-05-06T09:07:33 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="initializingLandingPageObject()[pri:0, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:53:56 IST" name="initializingLandingPageObject" finished-at="2023-05-08T09:53:56 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializingLandingPageObject -->
-        <test-method signature="verifyHealthInsuranceIconIsDisplayed()[pri:1, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:33 IST" name="verifyHealthInsuranceIconIsDisplayed" finished-at="2023-05-06T09:07:34 IST" duration-ms="175" status="PASS">
+        <test-method signature="verifyHealthInsuranceIconIsDisplayed()[pri:1, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:53:56 IST" name="verifyHealthInsuranceIconIsDisplayed" finished-at="2023-05-08T09:53:56 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHealthInsuranceIconIsDisplayed -->
-        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:34 IST" name="capturesFailedScreenshots" finished-at="2023-05-06T09:07:34 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:53:56 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:53:57 IST" duration-ms="252" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHealthInsuranceIconIsDisplayed status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconIsDisplayed()[pri:1, instance:testClasses.LandingPageTestClass@6771beb3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHealthInsuranceIconIsDisplayed status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconIsDisplayed()[pri:1, instance:testClasses.LandingPageTestClass@75d4a5c2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- capturesFailedScreenshots -->
-        <test-method signature="verifyHealthInsuranceIconText()[pri:2, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:34 IST" name="verifyHealthInsuranceIconText" finished-at="2023-05-06T09:07:34 IST" duration-ms="628" status="PASS">
+        <test-method signature="verifyHealthInsuranceIconText()[pri:2, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:53:57 IST" name="verifyHealthInsuranceIconText" finished-at="2023-05-08T09:53:57 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHealthInsuranceIconText -->
-        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:34 IST" name="capturesFailedScreenshots" finished-at="2023-05-06T09:07:35 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:53:57 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:53:57 IST" duration-ms="46" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHealthInsuranceIconText status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconText()[pri:2, instance:testClasses.LandingPageTestClass@6771beb3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHealthInsuranceIconText status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconText()[pri:2, instance:testClasses.LandingPageTestClass@75d4a5c2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- capturesFailedScreenshots -->
-        <test-method signature="verifyHealthInsuranceIconIsClickable()[pri:3, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:35 IST" name="verifyHealthInsuranceIconIsClickable" finished-at="2023-05-06T09:07:42 IST" duration-ms="7167" status="PASS">
+        <test-method signature="verifyHealthInsuranceIconIsClickable()[pri:3, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:53:57 IST" name="verifyHealthInsuranceIconIsClickable" finished-at="2023-05-08T09:54:04 IST" duration-ms="6673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHealthInsuranceIconIsClickable -->
-        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@6771beb3]" started-at="2023-05-06T09:07:42 IST" name="capturesFailedScreenshots" finished-at="2023-05-06T09:07:42 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:54:04 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:04 IST" duration-ms="41" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHealthInsuranceIconIsClickable status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconIsClickable()[pri:3, instance:testClasses.LandingPageTestClass@6771beb3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHealthInsuranceIconIsClickable status=SUCCESS method=LandingPageTestClass.verifyHealthInsuranceIconIsClickable()[pri:3, instance:testClasses.LandingPageTestClass@75d4a5c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturesFailedScreenshots -->
+        <test-method signature="moveToQuotePage1URL()[pri:4, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:54:04 IST" name="moveToQuotePage1URL" finished-at="2023-05-08T09:54:05 IST" duration-ms="1433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moveToQuotePage1URL -->
+        <test-method is-config="true" signature="capturesFailedScreenshots(org.testng.ITestResult)[pri:0, instance:testClasses.LandingPageTestClass@75d4a5c2]" started-at="2023-05-08T09:54:05 IST" name="capturesFailedScreenshots" finished-at="2023-05-08T09:54:05 IST" duration-ms="50" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=moveToQuotePage1URL status=SUCCESS method=LandingPageTestClass.moveToQuotePage1URL()[pri:4, instance:testClasses.LandingPageTestClass@75d4a5c2] output={null}]]]>
               </value>
             </param>
           </params>

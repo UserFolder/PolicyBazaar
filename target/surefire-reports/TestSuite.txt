@@ -1,4 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.122 s - in TestSuite
+Tests run: 18, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 40.588 s <<< FAILURE! - in TestSuite
+testClasses.QuotesPage1TestClass.verifyClickabilityOfFemaleCheckbox  Time elapsed: 0.107 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfFemaleCheckbox(QuotesPage1TestClass.java:52)
+
+testClasses.QuotesPage1TestClass.verifyClickabilityOfMaleCheckbox  Time elapsed: 0.109 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfMaleCheckbox(QuotesPage1TestClass.java:61)
+
+testClasses.QuotesPage1TestClass.verifyClickabilityOfPrivacyPolicy  Time elapsed: 4.18 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.policybazaar.com/legal-and-admin-policies/] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfPrivacyPolicy(QuotesPage1TestClass.java:137)
+
+testClasses.QuotesPage1TestClass.verifyClickabilityOfTermsOfUse  Time elapsed: 0.194 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+	expected [https://www.policybazaar.com/legal-and-admin-policies/#termsofuse] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfTermsOfUse(QuotesPage1TestClass.java:158)
+

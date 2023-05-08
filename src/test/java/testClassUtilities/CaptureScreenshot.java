@@ -11,7 +11,7 @@ public class CaptureScreenshot {
 	
 	public static String takeSS(WebDriver driver) throws IOException {
 		
-		String path ="C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"test-output"+File.separator+"Screenshots"+System.currentTimeMillis()+".png";
+		String path ="C:"+File.separator+"Users"+File.separator+"Rajat Dhawade"+File.separator+"eclipse-workspace"+File.separator+"Bazaar"+File.separator+"test-output"+File.separator+"SS"+System.currentTimeMillis()+".png";
 		
 		TakesScreenshot t = (TakesScreenshot)driver;
 		

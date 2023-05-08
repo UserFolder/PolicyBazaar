@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
-              <span class="suite-name border-passed">RegressionSuite</span>
+              <span class="suite-name border-failed">RegressionSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">18 methods, 4 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyClickabilityOfFemaleCheckbox">verifyClickabilityOfFemaleCheckbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyClickabilityOfMaleCheckbox">verifyClickabilityOfMaleCheckbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyClickabilityOfPrivacyPolicy">verifyClickabilityOfPrivacyPolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyClickabilityOfTermsOfUse">verifyClickabilityOfTermsOfUse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +130,31 @@
                       <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
                     </span>
                     <div class="method-list-content passed suite-RegressionSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.LandingPageTestClass" class="method navigator-link" hash-for-method="moveToQuotePage1URL">moveToQuotePage1URL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="navigateBackToQuotePage1URL">navigateBackToQuotePage1URL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="veirifyPrivacyPolicyIsDisplayed">veirifyPrivacyPolicyIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyClickabilityOfContinueButton">verifyClickabilityOfContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyFemaleCheckboxText">verifyFemaleCheckboxText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-RegressionSuite" title="testClasses.LandingPageTestClass" class="method navigator-link" hash-for-method="verifyHealthInsuranceIconIsClickable">verifyHealthInsuranceIconIsClickable</a> <!-- method navigator-link -->
@@ -116,6 +170,36 @@
                         <a href="#" panel-name="suite-RegressionSuite" title="testClasses.LandingPageTestClass" class="method navigator-link" hash-for-method="verifyHealthInsuranceIconText">verifyHealthInsuranceIconText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyMaleCheckboxText">verifyMaleCheckboxText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyTermsOfUseIsDisplayed">verifyTermsOfUseIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyTextOfContinueButton">verifyTextOfContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyTextOfYourFullNameLabel">verifyTextOfYourFullNameLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyYourFullNameLabelByPassingBlankText">verifyYourFullNameLabelByPassingBlankText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="testClasses.QuotesPage1TestClass" class="method navigator-link" hash-for-method="verifyYourFullNameLabelByPassingText">verifyYourFullNameLabelByPassingText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-RegressionSuite -->
                   </li>
                 </ul>
@@ -128,12 +212,81 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testClasses.QuotesPage1TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickabilityOfFemaleCheckbox">
+                  </a> <!-- verifyClickabilityOfFemaleCheckbox -->
+                  <span class="method-name">verifyClickabilityOfFemaleCheckbox</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfFemaleCheckbox(QuotesPage1TestClass.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickabilityOfMaleCheckbox">
+                  </a> <!-- verifyClickabilityOfMaleCheckbox -->
+                  <span class="method-name">verifyClickabilityOfMaleCheckbox</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfMaleCheckbox(QuotesPage1TestClass.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickabilityOfPrivacyPolicy">
+                  </a> <!-- verifyClickabilityOfPrivacyPolicy -->
+                  <span class="method-name">verifyClickabilityOfPrivacyPolicy</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.policybazaar.com/legal-and-admin-policies/] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfPrivacyPolicy(QuotesPage1TestClass.java:137)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickabilityOfTermsOfUse">
+                  </a> <!-- verifyClickabilityOfTermsOfUse -->
+                  <span class="method-name">verifyClickabilityOfTermsOfUse</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+	Test Case was intentionally Failed, Check Screenshot Attached for respective Test Case,
+	expected [https://www.policybazaar.com/legal-and-admin-policies/#termsofuse] but found [https://health.policybazaar.com/v2/proposer/1?utm_content=home_v12_newprequote]
+	at testClasses.QuotesPage1TestClass.verifyClickabilityOfTermsOfUse(QuotesPage1TestClass.java:158)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
           <div class="suite-RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">testClasses.LandingPageTestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="moveToQuotePage1URL">
+                  </a> <!-- moveToQuotePage1URL -->
+                  <span class="method-name">moveToQuotePage1URL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyHealthInsuranceIconIsClickable">
@@ -157,6 +310,84 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.QuotesPage1TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateBackToQuotePage1URL">
+                  </a> <!-- navigateBackToQuotePage1URL -->
+                  <span class="method-name">navigateBackToQuotePage1URL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veirifyPrivacyPolicyIsDisplayed">
+                  </a> <!-- veirifyPrivacyPolicyIsDisplayed -->
+                  <span class="method-name">veirifyPrivacyPolicyIsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickabilityOfContinueButton">
+                  </a> <!-- verifyClickabilityOfContinueButton -->
+                  <span class="method-name">verifyClickabilityOfContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFemaleCheckboxText">
+                  </a> <!-- verifyFemaleCheckboxText -->
+                  <span class="method-name">verifyFemaleCheckboxText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMaleCheckboxText">
+                  </a> <!-- verifyMaleCheckboxText -->
+                  <span class="method-name">verifyMaleCheckboxText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTermsOfUseIsDisplayed">
+                  </a> <!-- verifyTermsOfUseIsDisplayed -->
+                  <span class="method-name">verifyTermsOfUseIsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTextOfContinueButton">
+                  </a> <!-- verifyTextOfContinueButton -->
+                  <span class="method-name">verifyTextOfContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTextOfYourFullNameLabel">
+                  </a> <!-- verifyTextOfYourFullNameLabel -->
+                  <span class="method-name">verifyTextOfYourFullNameLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyYourFullNameLabelByPassingBlankText">
+                  </a> <!-- verifyYourFullNameLabelByPassingBlankText -->
+                  <span class="method-name">verifyYourFullNameLabelByPassingBlankText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyYourFullNameLabelByPassingText">
+                  </a> <!-- verifyYourFullNameLabelByPassingText -->
+                  <span class="method-name">verifyYourFullNameLabelByPassingText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
         </div> <!-- panel RegressionSuite -->
         <div panel-name="test-xml-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -172,6 +403,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.BaseClass&quot;/&gt;
       &lt;class name=&quot;testClasses.LandingPageTestClass&quot;/&gt;
+      &lt;class name=&quot;testClasses.QuotesPage1TestClass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
@@ -185,7 +417,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (2 classes)</span>
+                <span class="test-name">Test1 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,24 +443,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyHealthInsuranceIconIsClickable')
-data.setCell(0, 2, 'testClasses.LandingPageTestClass')
-data.setCell(0, 3, 7326);
+data.setCell(0, 1, 'navigateBackToQuotePage1URL')
+data.setCell(0, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(0, 3, 10540);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyHealthInsuranceIconText')
+data.setCell(1, 1, 'verifyHealthInsuranceIconIsClickable')
 data.setCell(1, 2, 'testClasses.LandingPageTestClass')
-data.setCell(1, 3, 674);
+data.setCell(1, 3, 7350);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyHealthInsuranceIconIsDisplayed')
-data.setCell(2, 2, 'testClasses.LandingPageTestClass')
-data.setCell(2, 3, 90);
+data.setCell(2, 1, 'verifyClickabilityOfPrivacyPolicy')
+data.setCell(2, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(2, 3, 4179);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyClickabilityOfContinueButton')
+data.setCell(3, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(3, 3, 3029);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyYourFullNameLabelByPassingText')
+data.setCell(4, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(4, 3, 2323);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyTermsOfUseIsDisplayed')
+data.setCell(5, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(5, 3, 2077);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'veirifyPrivacyPolicyIsDisplayed')
+data.setCell(6, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(6, 3, 2040);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'moveToQuotePage1URL')
+data.setCell(7, 2, 'testClasses.LandingPageTestClass')
+data.setCell(7, 3, 1484);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyHealthInsuranceIconText')
+data.setCell(8, 2, 'testClasses.LandingPageTestClass')
+data.setCell(8, 3, 635);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyYourFullNameLabelByPassingBlankText')
+data.setCell(9, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(9, 3, 207);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyClickabilityOfTermsOfUse')
+data.setCell(10, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(10, 3, 192);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyHealthInsuranceIconIsDisplayed')
+data.setCell(11, 2, 'testClasses.LandingPageTestClass')
+data.setCell(11, 3, 161);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyClickabilityOfMaleCheckbox')
+data.setCell(12, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(12, 3, 108);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyTextOfContinueButton')
+data.setCell(13, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(13, 3, 107);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyClickabilityOfFemaleCheckbox')
+data.setCell(14, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(14, 3, 104);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyMaleCheckboxText')
+data.setCell(15, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(15, 3, 86);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyFemaleCheckboxText')
+data.setCell(16, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(16, 3, 68);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyTextOfYourFullNameLabel')
+data.setCell(17, 2, 'testClasses.QuotesPage1TestClass')
+data.setCell(17, 3, 63);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-RegressionSuite">
               </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
@@ -243,15 +535,24 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testClasses.LandingPageTestClass</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
                 <span class="ignored-method-name">closeBrowser</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testClasses.QuotesPage1TestClass</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -273,38 +574,173 @@ return data;
               <div class="chronological-class-name">testClasses.LandingPageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializingLandingPageObject</span>
-                <span class="method-start">3940 ms</span>
+                <span class="method-start">3340 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyHealthInsuranceIconIsDisplayed</span>
-                <span class="method-start">3963 ms</span>
+                <span class="method-start">3383 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">capturesFailedScreenshots([TestResult name=verifyHealthInsuranceIconIsDisplayed status=SUCCESS method=LandingPageTestClass.ver...)</span>
-                <span class="method-start">4054 ms</span>
+                <span class="method-start">3546 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyHealthInsuranceIconText</span>
-                <span class="method-start">4329 ms</span>
+                <span class="method-start">3863 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">capturesFailedScreenshots([TestResult name=verifyHealthInsuranceIconText status=SUCCESS method=LandingPageTestClass.verifyHeal...)</span>
-                <span class="method-start">5004 ms</span>
+                <span class="method-start">4499 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyHealthInsuranceIconIsClickable</span>
-                <span class="method-start">5048 ms</span>
+                <span class="method-start">4546 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">capturesFailedScreenshots([TestResult name=verifyHealthInsuranceIconIsClickable status=SUCCESS method=LandingPageTestClass.ver...)</span>
-                <span class="method-start">12375 ms</span>
+                <span class="method-start">11897 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">moveToQuotePage1URL</span>
+                <span class="method-start">11936 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=moveToQuotePage1URL status=SUCCESS method=LandingPageTestClass.moveToQuotePage1URL(...)</span>
+                <span class="method-start">13421 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.QuotesPage1TestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializingQuotesPage1Object</span>
+                <span class="method-start">13471 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMaleCheckboxText</span>
+                <span class="method-start">13477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyMaleCheckboxText status=SUCCESS method=QuotesPage1TestClass.verifyMaleCheckbo...)</span>
+                <span class="method-start">13564 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyFemaleCheckboxText</span>
+                <span class="method-start">13594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyFemaleCheckboxText status=SUCCESS method=QuotesPage1TestClass.verifyFemaleChe...)</span>
+                <span class="method-start">13663 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickabilityOfFemaleCheckbox</span>
+                <span class="method-start">13692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyClickabilityOfFemaleCheckbox status=FAILURE method=QuotesPage1TestClass.verif...)</span>
+                <span class="method-start">13799 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickabilityOfMaleCheckbox</span>
+                <span class="method-start">14000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyClickabilityOfMaleCheckbox status=FAILURE method=QuotesPage1TestClass.verifyC...)</span>
+                <span class="method-start">14108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyTextOfYourFullNameLabel</span>
+                <span class="method-start">14281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyTextOfYourFullNameLabel status=SUCCESS method=QuotesPage1TestClass.verifyText...)</span>
+                <span class="method-start">14344 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyYourFullNameLabelByPassingBlankText</span>
+                <span class="method-start">14370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyYourFullNameLabelByPassingBlankText status=SUCCESS method=QuotesPage1TestClas...)</span>
+                <span class="method-start">14577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyYourFullNameLabelByPassingText</span>
+                <span class="method-start">14604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyYourFullNameLabelByPassingText status=SUCCESS method=QuotesPage1TestClass.ver...)</span>
+                <span class="method-start">16928 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyTextOfContinueButton</span>
+                <span class="method-start">16978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyTextOfContinueButton status=SUCCESS method=QuotesPage1TestClass.verifyTextOfC...)</span>
+                <span class="method-start">17086 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyClickabilityOfContinueButton</span>
+                <span class="method-start">17132 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyClickabilityOfContinueButton status=SUCCESS method=QuotesPage1TestClass.verif...)</span>
+                <span class="method-start">20161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">veirifyPrivacyPolicyIsDisplayed</span>
+                <span class="method-start">20191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=veirifyPrivacyPolicyIsDisplayed status=SUCCESS method=QuotesPage1TestClass.veirifyP...)</span>
+                <span class="method-start">22231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickabilityOfPrivacyPolicy</span>
+                <span class="method-start">22258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyClickabilityOfPrivacyPolicy status=FAILURE method=QuotesPage1TestClass.verify...)</span>
+                <span class="method-start">26439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyTermsOfUseIsDisplayed</span>
+                <span class="method-start">26672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyTermsOfUseIsDisplayed status=SUCCESS method=QuotesPage1TestClass.verifyTermsO...)</span>
+                <span class="method-start">28750 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyClickabilityOfTermsOfUse</span>
+                <span class="method-start">28788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=verifyClickabilityOfTermsOfUse status=FAILURE method=QuotesPage1TestClass.verifyCli...)</span>
+                <span class="method-start">28981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">navigateBackToQuotePage1URL</span>
+                <span class="method-start">29212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">capturesFailedScreenshots([TestResult name=navigateBackToQuotePage1URL status=SUCCESS method=QuotesPage1TestClass.navigateBack...)</span>
+                <span class="method-start">39752 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.BaseClass</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">12413 ms</span>
+                <span class="method-start">39785 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

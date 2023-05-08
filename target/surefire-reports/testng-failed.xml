@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test1(failed)" verbose="0">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="testClasses.QuotesPage1TestClass">
+        <methods>
+          <include name="verifyClickabilityOfFemaleCheckbox"/>
+          <include name="openBrowser"/>
+          <include name="verifyClickabilityOfMaleCheckbox"/>
+          <include name="capturesFailedScreenshots"/>
+          <include name="initializingQuotesPage1Object"/>
+          <include name="verifyClickabilityOfTermsOfUse"/>
+          <include name="closeBrowser"/>
+          <include name="verifyClickabilityOfPrivacyPolicy"/>
+        </methods>
+      </class> <!-- testClasses.QuotesPage1TestClass -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

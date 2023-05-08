@@ -6,6 +6,7 @@
 	  <classes>
 		  <class name="testClasses.BaseClass"></class>
 		  <class name="testClasses.LandingPageTestClass"></class>
+          <class name="testClasses.QuotesPage1TestClass"></class> 	  
 	  </classes>  
   </test> <!-- Test1 -->
 </suite> <!-- RegressionSuite -->
